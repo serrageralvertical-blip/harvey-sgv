@@ -64,6 +64,21 @@ OPT_OUT_PATTERNS = (
     "never contact",
     "delete my info",
     "delete my data",
+    # pt-BR
+    "descadastr",
+    "me remova",
+    "me tire da lista",
+    "me tirem da lista",
+    "pare de enviar",
+    "parem de enviar",
+    "pare de me enviar",
+    "parem de me enviar",
+    "não quero receber",
+    "nao quero receber",
+    "não me envie",
+    "nao me envie",
+    "não entre em contato",
+    "nao entre em contato",
 )
 # "No thanks" (what cold email's footer asks for) as a phrase: not "no
 # Thanksgiving", "Bruno / Thanks," or "yes or no, thanks".
@@ -72,7 +87,9 @@ NO_THANKS_RE = re.compile(
     r"(?<!\bor )\bno,?[ \t]+thank(?:s|[ \t]+you)\b(?![ \t]+(?:needed|necessary|required))")
 # A reply that says only this (signature aside) is an opt-out ("Reply STOP").
 BARE_OPT_OUTS = {"stop", "unsubscribe", "remove", "remove me", "opt out",
-                 "no thanks", "no thank you"}
+                 "no thanks", "no thank you",
+                 "sair", "pare", "parar", "remover", "descadastrar",
+                 "não obrigado", "não obrigada", "nao obrigado", "nao obrigada"}
 _MOBILE_SIGNATURE_RE = re.compile(
     r"^[ \t]*(?:sent from my \w[^\n]*|get outlook for \w[^\n]*|sent from \w+ mail[^\n]*)$",
     re.IGNORECASE | re.MULTILINE)

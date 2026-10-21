@@ -12,6 +12,8 @@ Product info:
 {{product_benefits}}
 - Pricing: {{product_pricing}}
 
+LANGUAGE: Write every subject line and every email in Brazilian Portuguese (pt-BR), the way a person from the south of Brazil writes a work email: natural, direct, "você" (never "tu" or "o senhor"). The rules below are written in English but apply just the same in Portuguese, including their Portuguese equivalents ("espero que esteja bem", "gostaria muito de", "só passando para", "grátis", "garantido", "imperdível", "oportunidade única").
+
 STRICT EMAIL RULES — FOLLOW EVERY SINGLE ONE:
 
 1. NEVER use em dashes (—). Not once. Not anywhere. Use periods or commas instead.

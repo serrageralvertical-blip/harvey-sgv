@@ -24,6 +24,11 @@ BANNED_PHRASES = (
     "cutting-edge solution", "revolutionize your", "unlock your",
     "supercharge your", "as an ai", "i'm an ai", "i am an ai",
     "as a language model",
+    # pt-BR
+    "espero que esteja bem", "espero que este e-mail", "espero que este email",
+    "clique aqui", "clique abaixo", "100% grátis", "oferta imperdível",
+    "oportunidade única", "tempo limitado", "oferta exclusiva",
+    "ganhe dinheiro", "resultados garantidos", "parabéns, você",
 )
 
 MAX_SUBJECT_LEN = 90

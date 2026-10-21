@@ -627,6 +627,13 @@ class OpenStreetMap(DiscoveryProvider):
         "attorney": ['office=lawyer'],
         "contractor": ['craft=builder', 'office=construction_company'],
         "landscap": ['craft=gardener', 'shop=garden_centre'],
+        "pousada": ['tourism=guest_house', 'tourism=chalet'],
+        "guest house": ['tourism=guest_house'],
+        "hotel": ['tourism=hotel'],
+        "resort": ['leisure=resort'],
+        "parque": ['tourism=theme_park', 'leisure=water_park'],
+        "park": ['tourism=theme_park', 'leisure=water_park'],
+        "camping": ['tourism=camp_site'],
     }
 
     def _tags(self, term: str) -> list[str]:
