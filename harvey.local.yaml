@@ -1,0 +1,112 @@
+persona:
+  name: "PREENCHER"                       # quem assina os e-mails (nome real)
+  company: "SGV Gestão Integrada"
+  role: "Desenvolvimento de Negócios"
+  email: "PREENCHER@dominio-secundario.com.br"  # caixa de envio (domínio secundário, nunca o principal)
+  linkedin: ""
+  tone: "próximo, direto, consultivo, de quem conhece a operação por dentro"
+
+product:
+  name: "SGV Gestão Integrada"
+  description: "Construímos, desenvolvemos e fazemos a gestão de empreendimentos turísticos no Sul do Brasil: da análise e projeto de uma área com potencial turístico até a operação do dia a dia de pousadas, hotéis e parques."
+  pricing: "Sob consulta, conforme o projeto"
+  key_benefits:
+    - "Gestão completa da operação de pousadas, hotéis e parques, para o dono deixar de tocar o dia a dia"
+    - "Transformamos terras e fazendas com potencial turístico em empreendimentos estruturados, do estudo de viabilidade à obra"
+    - "Projetos de multipropriedade e cotas com estrutura, construção e gestão sob o mesmo time"
+    - "Experiência na região da Serra Geral, onde construímos e operamos"
+  objection_responses:
+    "too expensive": "Faz sentido olhar o custo. Normalmente comparamos com o que a operação deixa de faturar hoje e com o tempo que você gasta nela. Quer que eu faça essa conta com os seus números?"
+    "already have a solution": "Entendo. Se tivesse uma coisa que você gostaria que funcionasse melhor na gestão de hoje, qual seria?"
+    "not interested": "Sem problema. Obrigado pelo retorno e não te escrevo mais."
+    "not the right time": "Entendo. Faz sentido eu voltar a falar com você antes da próxima alta temporada?"
+    "I want to keep control": "Totalmente compreensível. A gestão pode ser parcial, só nas áreas que mais tomam seu tempo, e você segue decidindo o que importa."
+  offer:
+    primary: "Gestão integrada de empreendimentos turísticos (operação, desenvolvimento e construção)"
+    entry: "Diagnóstico inicial do empreendimento ou da área, em uma conversa"
+    goal: "book_call"
+    booking_method: "ask_preference"
+    booking_url: ""
+    meeting_duration: "30 minutos"
+    meeting_owner: "PREENCHER"
+
+icp:
+  # Os três primeiros termos funcionam com a fonte gratuita (OpenStreetMap).
+  # Proprietários de terras e investidores não aparecem em mapas: para eles,
+  # use uma fonte de busca (Serper/DataForSEO) ou importe uma lista própria.
+  industries:
+    - "Pousada"
+    - "Hotel"
+    - "Parque"
+  company_size: "1-50 funcionários (pousadas, hotéis e parques independentes, familiares ou de dono único)"
+  titles:
+    - "Proprietário"
+    - "Sócio"
+    - "Diretor"
+    - "Gerente Geral"
+    - "Administrador"
+  geography:
+    - "Cambará do Sul, RS"
+    - "São Francisco de Paula, RS"
+    - "Gramado, RS"
+    - "Canela, RS"
+    - "Bento Gonçalves, RS"
+    - "Praia Grande, SC"
+    - "Urubici, SC"
+    - "Bom Jardim da Serra, SC"
+    - "Florianópolis, SC"
+    - "Foz do Iguaçu, PR"
+  # "lat,lng,raio_km" de cada cidade acima (Gramado e Canela são vizinhas:
+  # raio menor para não repetir as mesmas empresas)
+  geo_coordinates:
+    "Cambará do Sul, RS": "-29.0478,-50.1442,30"
+    "São Francisco de Paula, RS": "-29.4481,-50.5836,30"
+    "Gramado, RS": "-29.3787,-50.8763,8"
+    "Canela, RS": "-29.3656,-50.8158,8"
+    "Bento Gonçalves, RS": "-29.1714,-51.5194,20"
+    "Praia Grande, SC": "-29.1975,-49.9503,20"
+    "Urubici, SC": "-28.0150,-49.5917,30"
+    "Bom Jardim da Serra, SC": "-28.3378,-49.6261,25"
+    "Florianópolis, SC": "-27.5954,-48.5480,20"
+    "Foz do Iguaçu, PR": "-25.5469,-54.5882,20"
+  hiring_signals:
+    - "Gerente de Pousada"
+    - "Gerente de Hotel"
+    - "Gerente Geral Hotelaria"
+
+channels:
+  email:
+    enabled: true
+    provider: "gmail"
+    max_daily_sends: 30
+    require_approval: true      # todo e-mail espera sua aprovação no Outbox
+    send_to_risky: false
+    max_bounce_rate: 0.05
+    warmup:
+      start_date: ""            # AAAA-MM-DD do dia em que o aquecimento do domínio começou
+      min_days: 14
+      start_sends: 5
+      daily_increase: 3
+      dkim_selector: ""
+  linkedin:
+    enabled: false
+    max_daily_connections: 20
+    max_daily_messages: 10
+
+usage:
+  max_daily_claude_percent: 80
+  heartbeat_interval_minutes: 15
+  quiet_hours:
+    start: "20:00"
+    end: "08:00"
+    timezone: "America/Sao_Paulo"
+
+compliance:
+  # LGPD: identifique a empresa e ofereça um jeito simples de sair.
+  postal_address: "PREENCHER: razão social, CNPJ e endereço"
+  opt_out_line: 'Não quer receber mais e-mails? Responda "sair" e eu não escrevo mais.'
+  precleared:
+    enabled: false              # só cobre leis de EUA/Europa; não se aplica ao Brasil
+    sender_country: ""
+    address_source: "published"
+    prospect_country: "BR"
